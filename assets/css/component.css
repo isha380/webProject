@@ -1,0 +1,468 @@
+/*------------------------------------- homepage css----------------------------------------------------  */
+#home-page {
+    background-image: url("../image/webpage_image/bg6.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+  }
+  #home-page .nav-bar-box {
+    text-decoration: none;
+  }
+  .nav-bar-box nav ul {
+    list-style-type: none;
+  }
+  .nav-bar-box nav a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-size:18px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 20px;
+    transition: background 0.6s;
+  }
+  .nav-bar-box nav ul li {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .nav-bar-box nav ul {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-bar-box {
+    border: 3px solid rgb(168, 168, 169);
+    border-radius: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 5px;
+  }
+  
+  .nav-bar-box a:hover {
+    transition: 0.6s;
+    background: rgb(213, 213, 136);
+    color: brown;
+  }
+  .main-head {
+    color: aliceblue;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 138px;
+    font-size: 70px;
+  }
+  .main-nav-bar {
+    padding: 50px;
+  }
+  button.home{
+    width: 160px;
+    height: 62px;
+    border-radius: 30px;
+    border-color: rgb(168, 168, 169) ;
+    background-color: transparent;
+  }
+ /*------------------------------------- books css----------------------------------------------------  */
+.search-btn, .close-btn{
+    width:40px;
+    height:40px;
+    font-size:25px;
+    background-color: transparent;
+    color: rgb(213, 213, 136);
+    border:none;
+    cursor:pointer;
+    position:absolute;
+    transition:all 0.25s ease;
+
+}
+.close-btn{
+    color:rgb(219, 40, 8);
+    z-index:-1;
+}
+
+.search-box{
+    width:5px;
+    height:5px;
+    padding:15px;
+    background-color: transparent;
+    border:none;
+    border-radius:25px;
+    outline:none;
+    transition:width 0.25s ease ;
+}
+.books-header-searchBar{
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.active .search-box{
+    width: 250px;
+    background-color: rgb(213, 213, 136);
+}
+.active .search-btn{
+    transform:translate(200px,2px) scale(0.8);
+   background-color: transparent;
+   color: rgb(26, 96, 9);
+}
+.active .close-btn{
+    z-index:0;
+    transform:translate(250px,2px);
+}
+.book-banner-image{
+    background-image: url("../image/webpage_image/bg10.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: auto;
+    display: flex
+  
+}
+.book-banner{
+  padding-top: 53px;
+  padding-left: 20px;
+  margin-right: 30px;
+}
+
+.books-header{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+button.home{
+  width:150px;
+  border-style: none;
+}
+button.home a{
+    color: rgb(213, 213, 136);
+    
+}
+button.home:hover{
+   
+    transition: 0.6s;
+    background: rgb(213, 213, 136);   
+}
+button.home a:hover{
+    color: rgb(34, 138, 23);
+}
+span.header-text{
+    font-size:23px;
+    color: rgb(231, 231, 142);
+    
+}
+.books-header-text{
+    display: flex;
+    align-items: center;
+    gap:80px;
+    
+    
+}
+.books-header{
+    padding:10px;
+    height:100px;
+    width:auto;
+    background:rgb(152, 185, 113) ;
+}
+.book-card .book-image img{
+  width: 280px;
+  height:300px;
+}
+
+.book-card-collection{
+  display:flex;
+}
+
+.book-info-additional-text{
+  display: flex;
+  gap: 10px;
+}
+.book-card{
+  border: 5px solid rgb(92, 135, 87);
+  border-radius: 60px;
+  background-color:  rgb(213, 213, 136);
+  
+}
+.book-card-collection{
+  margin-bottom: 20px;
+  gap:10px;
+}
+.book-info-wrapper{
+  border: 3px solid rgb(24, 94, 16);
+    padding: 25px;
+    border-radius: 45px;
+    background-color: rgb(173, 188, 129);
+}
+.creator .creator-profile img{
+  width: 100px;
+  height:100px;
+  border-radius: 60%;
+  border: 5px solid rosybrown;
+   
+    background: #c7e9c9;
+}
+.article-of-the-day{
+  padding-top: 53px;
+  border: 4px solid  rgb(24, 94, 16);
+  margin-top: 53px;
+  width: 600px;
+  color:rgb(71, 14, 14);
+  border-radius: 60px;
+  margin-bottom: 60px;
+}
+.article{
+  display:flex;
+  border: 5px solid  rgb(24, 94, 16);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 150px;
+  margin: 20px 10px;
+}
+
+.article-wrapper{
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 700px;
+    overflow-y:auto;
+}
+    /* width */
+    .article-wrapper::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.article-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.article-wrapper::-webkit-scrollbar-thumb {
+  background:  rgb(173, 188, 129); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.article-wrapper::-webkit-scrollbar-thumb:hover {
+  background: rgb(80, 208, 21); 
+}
+
+.article-top-header{
+  text-align: center;
+  font-size: 25px;
+}
+.creator{
+  border: 4px solid   rgb(24, 94, 16);
+  padding: 9px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+.creator-info{
+  text-align: center;
+}
+.creator-article a{
+  text-decoration: none;
+  color:  rgb(65, 94, 16);
+}
+.creator-article-title{
+  margin-bottom: 10px;
+}
+.creator-article{
+  margin-left: 40px;
+}
+footer{
+  background:rgb(152, 185, 113) ;
+}
+.books-footer{
+ 
+  padding: 40px;
+
+  display: flex;
+  column-gap: 150px;
+}
+ul.icon{
+  display: flex;
+  gap: 35px;
+  margin-top: 10px;
+}
+.books-footer ul li{
+  list-style: none;
+}
+.books-footer ul li a i{
+  /* background-color: black; */
+    width: 22px;
+    height: 22px;
+    color:white;
+    align-content: center;
+    padding:2px;
+}
+ul li a{
+  text-decoration: none;
+}
+ul.info li{
+  display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.section for-your-article{
+  margin-right: 30px;
+}
+#login/signup{
+  height: 45px;
+    width: 88px;
+    background-color: lightyellow;
+}
+.section.about-us p{
+  color: rgb(231, 231, 142);
+}
+.section.support ul li a{
+  color: rgb(231, 231, 142);
+}
+.section.contact-us ul li a{
+  color: rgb(231, 231, 142);
+}
+.copyright {
+  margin-left: 20px;
+}
+
+Button.form{
+  color:rgb(231, 231, 142) ;
+  background-color:rgb(65, 94, 16);
+  height:30px;
+  width: 100px;
+  border-radius: 25px;
+  
+}
+
+ /*------------------------------------- login css----------------------------------------------------  */
+ .login-page{
+  background-image: url('../image/webpage_image/bg11.png');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+    color: aliceblue;
+ }
+ .form-wrapper{
+  margin-left:  450px;
+  margin-right:  450px;
+  padding-top:200px;
+ }
+ .form-wrapper-border{
+  border: 5px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(5px);
+    border-radius: 30px;
+    height: 250px;
+    width: 280px;
+    padding: 30px;
+    box-shadow: 20px 20px black ;
+    background: transparent;
+ }
+ .login-form{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    
+ }
+ .forget u a{
+  color:aliceblue;
+ }
+ .login-form.password{
+  margin-bottom: 20px;
+ }
+.btn.btn-submit{
+ 
+ height: 40px;
+  width:120px;
+ border-radius: 20px;
+}
+/* -------------------------------- success html          ------------------------------------------------------- */
+.success-page{
+  background-image: url('../image/webpage_image/bg13.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  width:auto;
+  margin-top: -25px;
+ 
+}
+.file-page-wrapper{
+  margin-left:  450px;
+  margin-right:  450px;
+  padding-top:200px;
+}
+.file-page-wrapper-border{
+  border: 2px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(8px);
+    border-radius: 30px;
+    height: 250px;
+    width: 280px;
+    padding: 30px;
+    box-shadow: 20px 20px black ;
+    
+    color: black;
+}
+.file{
+ 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+button.btn{
+  height: 40px;
+  width:120px;
+  border-radius: 20px;
+  background-color:beige  ;
+}
+.file-page-wrapper-border h1{
+  margin-bottom: 40px;
+}
+.file-article-text{
+margin-bottom: 10px;
+}
+/* -------------sign up ------------------------- */
+.signup-page{
+  background: url('../image/webpage_image/bg11.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  width:auto;
+  margin-top: -25px;
+
+}
+.signup-wrapper{
+  margin-left:  450px;
+  margin-right:  450px;
+  padding-top:200px;
+}
+.signup-wrapper-border{
+  border: 2px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(8px);
+    border-radius: 30px;
+    height: 250px;
+    width: 280px;
+    padding: 30px;
+    box-shadow: 20px 20px black ;
+    color: white;
+}
+.signup-form{
+  margin-bottom: 25px;
+}
+.signup-form.password{
+  display: flex
+}
+.signup-form i{
+   margin-left: 10px;
+}
+.signup-form .btn{
+  
+  border-radius: 20px;
+  background-color:beige
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/component.css">
+</head>
+<body>
+<div class="login-page">
+   
+    <div class="form-wrapper">
+        <div class="form-wrapper-border">
+        <h1>LOGIN</h1>
+        <form  action="login.php" method="POST">
+            <div class="login-form name">
+               <label for="username">NAME:</label>
+               <input type="text" id="username"  name="username" class="form-control" placeholder="Enter username" required>
+               <i class="fa-solid fa-user"></i>
+               <br>
+            </div>
+            <div class="login-form password">
+                <label for="password">PASSWORD:</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+                <i class="fa-solid fa-lock"></i>
+                <br>
+            </div>
+            <div class="login-form submit-forget-wrapper">
+                <input type="submit" value="SUBMIT" class="btn btn-submit">
+                <span class="forget"><u><a href="#">Forget password?</a></u></span>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+</body>
+</html>
